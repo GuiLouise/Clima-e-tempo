@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#3b82f6, #6a7dff);
+}
+
+#container{
+    background-color: white;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+
+#search input{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+
+#search button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#weather{
+    display: none;
+    margin-top: 20px;
+}
+
+#weather.show{
+    display: block;
+}
+
+#whater #title{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #372f3f;
+}
+
+
+#temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg, #5a7cdc, #606dde);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+#temp-img{
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /*A sombra fica somente no item e nao nas dimençõs dele*/
+}
+
+#temp-value{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#temp-description{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+#other-infos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+#other-infos .info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    gap: 10px;
+}
+
+#other-infos .info h2{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#other-infos .info i{
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+#temp-max-icon{
+    color: #7f1d1d;
+}
+
+#temp-min-icon{
+    color: #0284c7;
+}
+
+#humidade-icon{
+    color: #0ea5e9;
+}
+
+#wind-icon{
+    color: #7c3aed;
+}
+
+#alert{
+    margin-top: px;
+    color: rgb(190, 102, 0);
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#alert img{
+    width: 200px;
+    margin-top: 20px;
+}
